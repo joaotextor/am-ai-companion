@@ -7,10 +7,14 @@ export const styles = {
         backgroundColor: colors.secondary,
         borderColor: colors.primary,
         padding: 10,
-        margin: 10,
+        marginVertical: 10,
+        width: "100%",
       },
       submitButtonText: {
         fontSize: 24,
         color: colors.white,
+      },
+      buttonTextView: {
+        alignItems: "center",
       }
 }
