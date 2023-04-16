@@ -1,21 +1,28 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
-import { colors } from "./colors"
+import { colors } from "./colors";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
     backgroundColor: colors.lighter,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   amlogo: {
     marginTop: 30,
     marginBottom: 10,
     width: 140,
     height: 80,
-    resizeMode: "contain"
+    resizeMode: "contain",
+  },
+  sandwichButton: {
+    position: "absolute",
+    top: 0,
+    right: 0,
+    marginTop: 40,
+    marginRight: 10,
   },
   input: {
     height: 40,
@@ -35,7 +42,7 @@ export const styles = StyleSheet.create({
   },
   lblView: {
     width: "100%",
-    alignItems: "flex-start"
+    alignItems: "flex-start",
   },
   imageView: {
     display: "flex",
@@ -52,5 +59,36 @@ export const styles = StyleSheet.create({
     marginTop: 10,
     fontWeight: "normal",
     fontSize: 18,
-  }
+  },
+  responseView: {
+    width: "100%",
+    minHeight: "50%",
+    flex: 1,
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    borderWidth: 2,
+    borderRadius: 10,
+    padding: 10,
+  },
+  actualResponseView: {
+    display: "flex",
+    width: "100%",
+    alignItems: "flex-start",
+    height: 500,
+  },
+  loadingLabel: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginVertical: 5,
+  },
+  buttonsView: {
+    // gap: 5,
+    justifyContent: "space-evenly",
+    display: "flex",
+    flexDirection: "row",
+    width: "100%",
+  },
+  toasty: {
+    backgroundColor: colors.secondary,
+  },
 });
