@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     padding: 16,
   },
   navigationContainer: {
-    backgroundColor: colors.lighter,
+    backgroundColor: colors.secondaryLighter,
   },
   paragraph: {
     padding: 16,

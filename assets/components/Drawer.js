@@ -9,15 +9,22 @@ import {
   Image,
   BackHandler,
 } from "react-native";
+/*
 
+TODO: BOTÃO 'SOBRE' -> MODAL LOGO DA OPENAI, BLABLABLA.
+TODO: ALTERAR PARA TOUCHABLEHIGHLIGHT
+
+*/
 import CloseIcon from "./CloseIcon"
+import ModalAbout from "./ModalAbout";
 
 export default function Drawer(props) {
   const drawer = useRef(null);
+  
+  const [modalAboutVisible, setModalAboutVisible] = useState(false)
 
   const closeDrawer = () => {
-    drawer.current.closeDrawer()
-    console.log("Drawer closed.")
+    this.drawer.closeDrawer()
   }
 
   const navigationView = () => (
@@ -29,10 +36,16 @@ export default function Drawer(props) {
             <Text style={styles.link}>Recorrer de uma multa</Text>
           </View>
         </TouchableWithoutFeedback>
-        <TouchableWithoutFeedback onPress={() => Linking.openURL("https://www.adeusmultas.com/contato")}>
+        <TouchableWithoutFeedback onPress={() => Linking.openURL("http://api.whatsapp.com/send?phone=5554984286630")}>
           <View style={styles.buttonView}>
             <Image style={styles.buttonImage} source={require("../images/contact.png")}/>
-            <Text style={styles.link}>Contato</Text>
+            <Text style={styles.link}>Chamar no WhatsApp</Text>
+          </View>
+        </TouchableWithoutFeedback>
+        <TouchableWithoutFeedback onPress={() => setModalAboutVisible(!modalAboutVisible ? !this.modal.visible : this.modal.visible)}>
+          <View style={styles.buttonView}>
+            <Image style={styles.buttonImage} source={require("../images/about.png")}/>
+            <Text style={styles.link}>Sobre o Assistente</Text>
           </View>
         </TouchableWithoutFeedback>
         <TouchableWithoutFeedback onPress={() => BackHandler.exitApp()}>
@@ -46,11 +59,12 @@ export default function Drawer(props) {
 
   return (
     <DrawerLayoutAndroid
-      ref={drawer}
+      ref={(drawer) => this.drawer = drawer}
       drawerWidth={300}
       drawerPosition="right"
       renderNavigationView={navigationView}
     >
+      <ModalAbout isVisible={modalAboutVisible}/>
       {props.children}
     </DrawerLayoutAndroid>
   );
