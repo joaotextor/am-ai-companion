@@ -10,12 +10,10 @@ npm-debug.*
 *.orig.*
 web-build/
 .env
-eas.json
-app.json
-
+adeus-multas-ai-152183db73bb.json
 # macOS
 .DS_Store
-
+android
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
 

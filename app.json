@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Assistente Virtual - Adeus Multas",
+    "slug": "am-ai-companion",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff",
+      },
+      "package": "com.joaotextor.amaicompanion",
+      "versionCode": 3,
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ccc306b6-a6ef-442c-8649-1ef476066f0b"
+      }
+    }
+  }
+}
