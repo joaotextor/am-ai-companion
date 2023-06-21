@@ -1,6 +1,6 @@
-[English](#smart-assistant-adeus-multas)
+[English](#smart-assistant---adeus-multas)
 
-[Português](#assistente-inteligente-adeus-multas)
+[Português](#assistente-inteligente---adeus-multas)
 
 # Smart Assistant - Adeus Multas
 
