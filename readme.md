@@ -8,7 +8,7 @@ Developed as the final project of Post-Graduation in Multiplatform Mobile Applic
 
 ## What it's about 🤔?
 
-The "Adeus Multas" Virtual Assistant is a simple app that allows the user to ask questions related to the Brazilian Traffic Law.
+The "Adeus Multas" Virtual Assistant is a simple app that allows the user to ask questions related to the Brazilian Traffic Law. It was developed for the company 'Adeus Multas', to be used by their customers and the general public.
 
 ## How it was developed 💻?
 
@@ -82,7 +82,7 @@ Projeto realizado para apresentação no Pitch de conclusão do curso de Pós Gr
 
 ## Em que consiste 🤔?
 
-O Assistente Virtual Adeus Multas é um aplicativo simples que permite ao usuário tirar dúvidas e fazer perguntas ao assistente virtual, relacionadas ao Direito de Trânsito.
+O Assistente Virtual Adeus Multas é um aplicativo simples que permite ao usuário tirar dúvidas e fazer perguntas ao assistente virtual, relacionadas ao Direito de Trânsito. Foi desenvolvido para a empresa 'Adeus Multas', para uso de seus clientes e do público em geral.
 
 ## Como foi desenvolvido 💻?
 
