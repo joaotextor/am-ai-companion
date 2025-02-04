@@ -9,11 +9,11 @@ import {
   TouchableWithoutFeedback,
 } from "react-native";
 
-import Toast , {DURATION} from "react-native-easy-toast"
+import Toast, { DURATION } from "react-native-easy-toast";
 
 import React, { useRef, useState } from "react";
 
-import * as Clipboard from 'expo-clipboard';
+import * as Clipboard from "expo-clipboard";
 
 import { styles } from "./App.styles";
 import { colors } from "./colors";
@@ -67,17 +67,17 @@ export default function App() {
 
   const copyToClipboard = async (text) => {
     await Clipboard.setStringAsync(text);
-    this.toast.show("Resposta copiada para a área de transferência", 2000)
-  }
+    this.toast.show("Resposta copiada para a área de transferência", 2000);
+  };
 
   return (
     <Drawer>
       <View style={styles.container}>
-      <View style={styles.sandwichButton}>
-        <TouchableWithoutFeedback onPress={() => this.drawer.openDrawer()}>
-          <Image source={require("./assets/images/menu.png")}></Image>
-        </TouchableWithoutFeedback>
-      </View>
+        <View style={styles.sandwichButton}>
+          <TouchableWithoutFeedback onPress={() => this.drawer.openDrawer()}>
+            <Image source={require("./assets/images/menu.png")}></Image>
+          </TouchableWithoutFeedback>
+        </View>
         <StatusBar style="auto" />
         <Image
           style={styles.amlogo}
@@ -139,7 +139,11 @@ export default function App() {
             </View>
           ) : null}
         </View>
-        <Toast ref={(toast) => this.toast = toast} position="top" style={styles.toasty}/>
+        <Toast
+          ref={(toast) => (this.toast = toast)}
+          position="top"
+          style={styles.toasty}
+        />
       </View>
     </Drawer>
   );
