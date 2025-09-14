@@ -66,8 +66,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: "flex-start",
     justifyContent: "flex-start",
+    overflow: "scroll",
     borderWidth: 2,
-    borderRadius: 10,
+    borderRadius: 50,
     padding: 10,
   },
   actualResponseView: {
@@ -75,6 +76,7 @@ export const styles = StyleSheet.create({
     width: "100%",
     alignItems: "flex-start",
     height: 500,
+    overflow: "scroll",
   },
   loadingLabel: {
     fontSize: 18,
